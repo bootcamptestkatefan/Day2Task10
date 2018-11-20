@@ -24,3 +24,8 @@ const calculateTheResultForTwoInputs = require('../createMultibleTable.js').calc
 it ('calculate The Result For Two Inputs', () => {
     expect(calculateTheResultForTwoInputs(2,4)).toBe("2*4=8");
 });
+
+const presentItFromStringToAligned = require('../createMultibleTable.js').presentItFromStringToAligned;
+it ('present It From String To Aligned', ()=> {
+    expect(presentItFromStringToAligned(2,4)).toBe('2*2=4\t\n'+'2*3=6\t3*3=9\t\n'+'2*4=8\t3*4=12\t4*4=16\t\n');
+});
