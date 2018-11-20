@@ -8,3 +8,10 @@ const checkNumberLargerThanOneInclusively = require('../createMultibleTable.js')
 it ('check Number Larger Than One Inclusively', () => {
     expect(checkNumberLargerThanOneInclusively(4,2)).toBe(true);
 });
+
+
+const checkNumberSmallerThanOneThousandInclusively = require('../createMultibleTable.js').checkNumberSmallerThanOneThousandInclusively;
+it ('check Number Smaller Than One Thousand Inclusively', () => {
+    expect(checkNumberSmallerThanOneThousandInclusively(4,1001)).toBe(false);
+});
+

@@ -8,5 +8,11 @@ function checkNumberLargerThanOneInclusively (a,b){
 }
 
 
+function checkNumberSmallerThanOneThousandInclusively (a,b){
+    return a<=1000&&b<=1000;
+}
+
 module.exports = {checkFirstSmallerThanLast,
-                  checkNumberLargerThanOneInclusively};
+                  checkNumberLargerThanOneInclusively,
+                  checkNumberSmallerThanOneThousandInclusively,
+                  };
